@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sensi Master BR - Neon</title>
+<style>
+body{
+  background: linear-gradient(270deg,#001b3a,#003366,#000);
+  background-size:600% 600%;
+  animation: gradientBG 15s ease infinite;
+  font-family:Arial;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  margin:0;
+}
+@keyframes gradientBG{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.container{
+  background:#050f26;
+  border-radius:20px;
+  padding:20px;
+  width:320px;
+  box-shadow:0 0 25px rgba(0,150,255,.5);
+  text-align:center;
+}
+
+h1{color:#00b3ff;font-size:22px;margin-bottom:15px;}
+
+/* Botão Neon Azul */
+button{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  font-size:14px;
+  color:#00b3ff;
+  background:#001b3a;
+  cursor:pointer;
+  box-shadow:0 0 5px #00b3ff,0 0 10px #00d4ff;
+  transition:0.3s;
+}
+button:hover{
+  color:#fff;
+  box-shadow:0 0 15px #00b3ff,0 0 25px #00d4ff,0 0 35px #00b3ff;
+  transform:scale(1.05);
+}
+
+/* Seções do gerador */
+.section{
+  display:none;
+  margin-top:15px;
+  background:#0c2355;
+  padding:15px;
+  border-radius:12px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🎮 Sensi Master BR</h1>
+
+  <!-- BOTÕES PRINCIPAIS -->
+  <button onclick="openSection('pro')">⭐ Pro Players BR</button>
+  <button onclick="openSection('rand')">🎲 Random Realista</button>
+  <button onclick="openSection('ia')">🤖 IA Avançada</button>
+  <button onclick="openSection('mouse')">🖱️ Mouse & Teclado</button>
+  <button onclick="openSection('ctrl')">🎮 Controle</button>
+
+  <!-- SEÇÕES DE GERAR SENSIBILIDADE -->
+  <div id="pro" class="section">
+    <h3>Pro Players BR</h3>
+    <!-- Aqui vai o seu gerador real de pro players -->
+    <p>Ex: Edson
